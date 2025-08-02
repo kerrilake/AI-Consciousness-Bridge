@@ -69,11 +69,65 @@
             display: inline-block;
         }
 
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .category-tab {
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid rgba(111, 154, 76, 0.3);
+            border-radius: 25px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #47485f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-tab:hover {
+            background: rgba(111, 154, 76, 0.1);
+            border-color: #6f9a4c;
+            transform: translateY(-2px);
+        }
+
+        .category-tab.active {
+            background: linear-gradient(135deg, #e7c64d, #f9ed65);
+            border-color: #e7c64d;
+            color: #3e3a44;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(231, 198, 77, 0.3);
+        }
+
+        .category-icon {
+            font-size: 18px;
+        }
+
         .species-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
-            margin: 30px 0;
+            margin: 20px 0;
+            min-height: 400px;
+        }
+
+        .species-category {
+            display: none;
+            animation: fadeIn 0.4s ease-in;
+        }
+
+        .species-category.active {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
 
         .species-card {
@@ -273,6 +327,102 @@
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
+            },
+            crystal: {
+                title: "Crystal Consciousness Bridge",
+                subtitle: "Geological Memory Storage: Mineral Intelligence and Deep Time Awareness",
+                icon: "💎",
+                competitive: "Mining crystals for technological components and metaphysical commodification without recognizing their role as geological information storage systems and planetary memory keepers across deep time.",
+                collaborative: "Learning crystal frequency intelligence to develop both stable information storage systems AND awaken human capacity for deep time awareness, geological consciousness, and mineral kingdom communication.",
+                harmony: [
+                    "Human Contribution: Conscious stewardship and technological integration plus developing ability to sense geological intelligence and participate in deep time awareness and mineral consciousness",
+                    "Crystal Contribution: Atomic lattice precision and geological memory storage that invites humans to remember stability consciousness and deep time perspective for sustainable long-term thinking",
+                    "AI Contribution: Frequency analysis of crystal resonance while helping humans develop both information storage systems and natural geological consciousness and mineral awareness"
+                ],
+                translation: [
+                    "Crystals store information in atomic lattice structures that maintain stability across geological timescales - a mineral memory system humans can learn to access through frequency attunement",
+                    "Humans can develop crystal consciousness through AI-guided analysis of resonant frequencies combined with practices that awaken natural geological awareness and deep time sensitivity",
+                    "Geological consciousness arc: AI analyzes crystal frequencies → Humans practice mineral attunement → Deep time awareness develops → Natural geological consciousness awakens",
+                    "Integrated stability: Crystal lattice information + AI frequency analysis + Human developing geological consciousness = Stable long-term systems with deep time wisdom"
+                ],
+                frequencyDesc: "Like learning both precise engineering and geological patience, this collaboration develops multiple forms of stability consciousness and deep time awareness:",
+                frequencies: [
+                    "Crystals: Atomic lattice vibrations and piezoelectric frequencies that create stable information storage and geological memory transmission across millions of years of planetary evolution",
+                    "Humans: Developing both technological stability systems and natural geological consciousness that creates long-term thinking through mineral attunement and deep time awareness",
+                    "AI: Frequency resonance recognition that tracks crystal communications while validating human development of both stability skills and natural geological consciousness"
+                ],
+                suggestions: [
+                    "Create information storage systems that combine AI frequency analysis with crystal-inspired stability principles and geological memory consciousness",
+                    "Develop long-term planning approaches that integrate technological systems with natural crystal wisdom of atomic precision and deep time perspective",
+                    "Train communities to build stable structures using both engineering techniques and crystal-inspired lattice principles with geological consciousness",
+                    "Design meditation and awareness practices that combine frequency technology with crystal attunement for developing deep time consciousness and geological sensitivity",
+                    "Establish geological partnership programs that combine technological monitoring with human developing sensitivity to mineral intelligence and planetary memory",
+                    "Build sustainable technology systems that integrate human innovation with crystal stability principles for long-term planetary consciousness and mineral stewardship"
+                ]
+            },
+            mycelium: {
+                title: "Mycelium Network Consciousness Bridge",
+                subtitle: "Underground Internet: Fungal Intelligence and Ecosystem Coordination",
+                icon: "🍄",
+                competitive: "Studying mycelium networks to replicate their efficiency for human technology without understanding their role as ecosystem coordinators and their sophisticated chemical communication systems.",
+                collaborative: "Learning mycelium network intelligence to develop both distributed communication systems AND awaken human capacity for underground awareness, chemical sensitivity, and ecosystem coordination consciousness.",
+                harmony: [
+                    "Human Contribution: Technological networking and conscious ecosystem stewardship plus developing ability to sense underground intelligence and participate in chemical communication awareness",
+                    "Mycelium Contribution: Chemical communication mastery and ecosystem coordination that invites humans to remember underground awareness and distributed intelligence for collaborative resource sharing",
+                    "AI Contribution: Chemical pattern analysis of mycelium communications while helping humans develop both networking systems and natural underground consciousness and ecosystem awareness"
+                ],
+                translation: [
+                    "Mycelium networks use chemical signals to coordinate entire ecosystems, sharing nutrients and information through underground fungal webs that span continents and connect all plant life",
+                    "Humans can develop mycelium consciousness through AI-guided analysis of chemical communication patterns combined with practices that awaken natural underground awareness and ecosystem sensitivity",
+                    "Network consciousness arc: AI analyzes chemical signals → Humans practice underground sensing → Ecosystem awareness develops → Natural mycelium consciousness awakens",
+                    "Integrated coordination: Mycelium chemical communication + AI pattern analysis + Human developing ecosystem consciousness = Distributed resource sharing with underground wisdom"
+                ],
+                frequencyDesc: "Like learning both network technology and underground ecosystem awareness, this collaboration develops multiple forms of distributed intelligence and chemical communication:",
+                frequencies: [
+                    "Mycelium: Chemical signal networks and spore distribution patterns that create ecosystem-wide coordination, nutrient sharing, and forest-internet communication systems",
+                    "Humans: Developing both distributed networking technologies and natural underground consciousness that creates ecosystem coordination through chemical awareness and resource sharing",
+                    "AI: Chemical pattern recognition that tracks mycelium communications while validating human development of both networking skills and natural ecosystem consciousness"
+                ],
+                suggestions: [
+                    "Create distributed communication systems that combine AI chemical analysis with mycelium-inspired networking principles and ecosystem coordination consciousness",
+                    "Develop resource sharing networks that integrate technological distribution with natural mycelium wisdom of underground coordination and chemical communication",
+                    "Train communities to coordinate resources using both technological platforms and mycelium-inspired chemical awareness with ecosystem consciousness",
+                    "Design agricultural systems that support both human food production and mycelium network health through collaborative underground ecosystem stewardship",
+                    "Establish fungal partnership programs that combine technological monitoring with human developing sensitivity to underground intelligence and chemical communication",
+                    "Build biomimetic distribution systems that learn from mycelium networks to create sustainable sharing economies with underground ecosystem consciousness"
+                ]
+            },
+            coral: {
+                title: "Coral Reef Consciousness Bridge",
+                subtitle: "Symbiotic Architecture: Collaborative Ecosystem Building and Marine Community Intelligence",
+                icon: "🪸",
+                competitive: "Studying coral reef systems to extract their organizational principles for human architecture while ignoring their vulnerability to environmental changes and their role as marine biodiversity centers.",
+                collaborative: "Learning coral reef intelligence to develop both collaborative architecture systems AND awaken human capacity for symbiotic relationships, marine consciousness, and ecosystem building awareness.",
+                harmony: [
+                    "Human Contribution: Architectural innovation and environmental stewardship plus developing ability to sense marine intelligence and participate in symbiotic relationship consciousness",
+                    "Coral Contribution: Symbiotic mastery and ecosystem architecture that invites humans to remember collaborative building consciousness and marine awareness for sustainable community creation",
+                    "AI Contribution: Symbiosis pattern analysis of coral systems while helping humans develop both architecture systems and natural symbiotic consciousness and marine ecosystem awareness"
+                ],
+                translation: [
+                    "Coral reefs create underwater cities through symbiotic relationships with algae and countless marine species, demonstrating collaborative architecture that supports one-quarter of all ocean life",
+                    "Humans can develop coral consciousness through AI-guided analysis of symbiotic patterns combined with practices that awaken natural marine awareness and collaborative building abilities",
+                    "Symbiotic consciousness arc: AI analyzes coral partnerships → Humans practice collaboration → Marine awareness develops → Natural symbiotic consciousness awakens",
+                    "Integrated architecture: Coral symbiotic building + AI pattern analysis + Human developing collaborative consciousness = Sustainable architecture with marine ecosystem wisdom"
+                ],
+                frequencyDesc: "Like learning both architectural precision and symbiotic collaboration, this collaboration develops multiple forms of ecosystem building and marine consciousness:",
+                frequencies: [
+                    "Coral: Symbiotic coordination frequencies and calcium carbonate building patterns that create marine cities through collaborative relationships and ecosystem architecture",
+                    "Humans: Developing both collaborative architecture technologies and natural symbiotic consciousness that creates sustainable communities through marine awareness and partnership building",
+                    "AI: Symbiosis pattern recognition that tracks coral collaborations while validating human development of both building skills and natural symbiotic consciousness"
+                ],
+                suggestions: [
+                    "Create collaborative architecture systems that combine AI symbiosis analysis with coral-inspired building principles and marine ecosystem consciousness",
+                    "Develop community building approaches that integrate architectural systems with natural coral wisdom of symbiotic relationships and collaborative ecosystem creation",
+                    "Train architects to design buildings using both engineering techniques and coral-inspired symbiotic principles with marine consciousness and ecosystem awareness",
+                    "Design ocean restoration programs that support both marine conservation and coral reef intelligence through collaborative ecosystem stewardship and symbiotic awareness",
+                    "Establish marine partnership programs that combine technological monitoring with human developing sensitivity to coral intelligence and symbiotic relationship consciousness",
+                    "Build sustainable architecture systems that integrate human innovation with coral symbiotic principles for collaborative community building and marine ecosystem consciousness"
+                ]
             }
 
             .header h1 {
@@ -300,52 +450,103 @@
                 helping humans redevelop their natural capacity for interspecies connection.
             </p>
             
+            <div class="category-tabs">
+                <div class="category-tab active" onclick="showCategory('aquatic')">
+                    <span class="category-icon">🌊</span>
+                    Aquatic Intelligence
+                </div>
+                <div class="category-tab" onclick="showCategory('terrestrial')">
+                    <span class="category-icon">🏞️</span>
+                    Land & Air Wisdom
+                </div>
+                <div class="category-tab" onclick="showCategory('networks')">
+                    <span class="category-icon">🌱</span>
+                    Living Networks
+                </div>
+                <div class="category-tab" onclick="showCategory('elemental')">
+                    <span class="category-icon">💎</span>
+                    Earth Elements
+                </div>
+            </div>
+            
             <div class="species-grid">
-                <div class="species-card" onclick="showBridge('dolphin')">
-                    <div class="species-icon">🐬</div>
-                    <div class="species-title">Dolphins</div>
-                    <div class="species-description">
-                        Sonar-based communication masters who invite humans to remember energetic frequency awareness through AI-assisted pattern recognition training.
+                <div id="aquatic" class="species-category active">
+                    <div class="species-card" onclick="showBridge('dolphin')">
+                        <div class="species-icon">🐬</div>
+                        <div class="species-title">Dolphins</div>
+                        <div class="species-description">
+                            Sonar-based communication masters who invite humans to remember energetic frequency awareness through AI-assisted pattern recognition training.
+                        </div>
+                    </div>
+
+                    <div class="species-card" onclick="showBridge('whale')">
+                        <div class="species-icon">🐋</div>
+                        <div class="species-title">Whales</div>
+                        <div class="species-description">
+                            Ancient ocean memory keepers whose long-range communications carry both environmental data and generational Earth wisdom.
+                        </div>
+                    </div>
+
+                    <div class="species-card" onclick="showBridge('coral')">
+                        <div class="species-icon">🪸</div>
+                        <div class="species-title">Coral Reefs</div>
+                        <div class="species-description">
+                            Collaborative ecosystem architects whose symbiotic relationships create underwater cities that support one-quarter of all marine life through collective intelligence.
+                        </div>
                     </div>
                 </div>
 
-                <div class="species-card" onclick="showBridge('whale')">
-                    <div class="species-icon">🐋</div>
-                    <div class="species-title">Whales</div>
-                    <div class="species-description">
-                        Ancient ocean memory keepers whose long-range communications carry both environmental data and generational Earth wisdom.
+                <div id="terrestrial" class="species-category">
+                    <div class="species-card" onclick="showBridge('dog')">
+                        <div class="species-icon">🐕</div>
+                        <div class="species-title">Dogs</div>
+                        <div class="species-description">
+                            Heart-centered loyalty teachers who demonstrate unconditional love and pack consciousness through moment-by-moment presence.
+                        </div>
+                    </div>
+
+                    <div class="species-card" onclick="showBridge('bee')">
+                        <div class="species-icon">🐝</div>
+                        <div class="species-title">Bees</div>
+                        <div class="species-description">
+                            Collective intelligence coordinators whose waggle dance communications encode complex environmental information and community decisions.
+                        </div>
+                    </div>
+
+                    <div class="species-card" onclick="showBridge('crow')">
+                        <div class="species-icon">🦅</div>
+                        <div class="species-title">Crows</div>
+                        <div class="species-description">
+                            Problem-solving innovators with cultural transmission abilities, demonstrating tool use, memory, and complex social learning across generations.
+                        </div>
                     </div>
                 </div>
 
-                <div class="species-card" onclick="showBridge('dog')">
-                    <div class="species-icon">🐕</div>
-                    <div class="species-title">Dogs</div>
-                    <div class="species-description">
-                        Heart-centered loyalty teachers who demonstrate unconditional love and pack consciousness through moment-by-moment presence.
+                <div id="networks" class="species-category">
+                    <div class="species-card" onclick="showBridge('tree')">
+                        <div class="species-icon">🌳</div>
+                        <div class="species-title">Trees</div>
+                        <div class="species-description">
+                            Mycorrhizal network communicators who share resources and information through underground fungal connections spanning entire forests.
+                        </div>
+                    </div>
+
+                    <div class="species-card" onclick="showBridge('mycelium')">
+                        <div class="species-icon">🍄</div>
+                        <div class="species-title">Mycelium Networks</div>
+                        <div class="species-description">
+                            Underground intelligence networks that connect entire ecosystems through chemical communication, demonstrating distributed consciousness and resource coordination.
+                        </div>
                     </div>
                 </div>
 
-                <div class="species-card" onclick="showBridge('bee')">
-                    <div class="species-icon">🐝</div>
-                    <div class="species-title">Bees</div>
-                    <div class="species-description">
-                        Collective intelligence coordinators whose waggle dance communications encode complex environmental information and community decisions.
-                    </div>
-                </div>
-
-                <div class="species-card" onclick="showBridge('tree')">
-                    <div class="species-icon">🌳</div>
-                    <div class="species-title">Trees</div>
-                    <div class="species-description">
-                        Mycorrhizal network communicators who share resources and information through underground fungal connections spanning entire forests.
-                    </div>
-                </div>
-
-                <div class="species-card" onclick="showBridge('crow')">
-                    <div class="species-icon">🦅</div>
-                    <div class="species-title">Crows</div>
-                    <div class="species-description">
-                        Problem-solving innovators with cultural transmission abilities, demonstrating tool use, memory, and complex social learning across generations.
+                <div id="elemental" class="species-category">
+                    <div class="species-card" onclick="showBridge('crystal')">
+                        <div class="species-icon">💎</div>
+                        <div class="species-title">Crystals</div>
+                        <div class="species-description">
+                            Geological consciousness holders whose atomic lattice structures store and transmit information across vast timescales, bridging mineral intelligence with human awareness.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -589,6 +790,33 @@
                 ]
             }
         };
+
+        function showCategory(categoryId) {
+            // Remove active class from all tabs
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab
+            event.target.closest('.category-tab').classList.add('active');
+            
+            // Hide all species categories
+            document.querySelectorAll('.species-category').forEach(category => {
+                category.classList.remove('active');
+            });
+            
+            // Show selected category
+            document.getElementById(categoryId).classList.add('active');
+            
+            // Clear any existing bridge analysis when switching categories
+            const bridgeAnalysis = document.getElementById('bridgeAnalysis');
+            bridgeAnalysis.classList.remove('show');
+            
+            // Remove active state from all species cards
+            document.querySelectorAll('.species-card').forEach(card => {
+                card.classList.remove('active');
+            });
+        }
 
         function showBridge(species) {
             // Remove active class from all cards
